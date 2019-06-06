@@ -46,6 +46,7 @@ ages = []
 data[season].each do |cast|
     ages << cast["age"].to_i
 end
+binding.pry
 average = ages.sum / ages.size
 average.round
 end
