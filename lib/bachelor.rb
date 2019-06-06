@@ -44,7 +44,7 @@ end
 def get_average_age_for_season(data, season)
 ages = []
 data[season].each do |cast|
-    ages << cast["age"].to_i
+    ages << cast["age"].to_nearest_i
 end
 average = ages.sum / ages.size
 end
